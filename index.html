@@ -1,0 +1,57 @@
+import tkinter as tk
+
+window1 = tk.Tk()
+window1.config(bg="black")
+
+# Title
+window1.title("Student score calculator")
+
+# Window Size
+window1.geometry("500x400")
+
+# Name
+label_for_Name = tk.Label(window1, text="Student Name", font=("Times", 15), bg="black", fg="white")
+label_for_Name.grid(row=0, column=0, padx=10, pady=10)
+
+input_Name = tk.Entry(window1, font=("Times", 12))
+input_Name.grid(row=0, column=1)
+
+# Math
+label_for_Math = tk.Label(window1, text="Math",font=("Times", 15), bg="black", fg="white" )
+label_for_Math.grid(row=1, column=0, padx=10, pady=10)
+
+input_Math = tk.Entry(window1)
+input_Math.grid(row=1, column=1)
+
+# English
+label_for_English = tk.Label(window1, text="English", font=("Times", 15), bg="black", fg="white")
+label_for_English.grid(row=2, column=0, padx=10, pady=10)
+
+input_English = tk.Entry(window1)
+input_English.grid(row=2, column=1)
+
+# Crs
+label_for_Crk = tk.Label(window1, text="Crs", font=("Times", 15), bg="black", fg="white")
+label_for_Crk.grid(row=3, column=0, padx=10, pady=10)
+
+input_Crk = tk.Entry(window1)
+input_Crk.grid(row=3, column=1)
+
+# Irk
+label_for_Irk = tk.Label(window1, text="Irk", font=("Times", 15), bg="black", fg="white")
+label_for_Irk.grid(row=4, column=0, padx=10, pady=10)
+
+input_Irk = tk.Entry(window1)
+input_Irk.grid(row=4, column=1)
+
+# Civic
+label_for_Civic = tk.Label(window1, text="Civic", font=("Times", 15), bg="black", fg="white")
+label_for_Civic.grid(row=5, column=0, padx=10, pady=10)
+
+input_Civic = tk.Entry(window1)
+input_Civic.grid(row=5, column=1)
+
+button = tk.Button(text="Submit", bg="green", fg="white")
+button.grid(row=6, column=0)
+
+window1.mainloop()
